@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer cell</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---------------------------------------------Navbar Design---------------------------------- -->
+    <div class="nav-container">
+        <nav>
+            <div><img src="image/logo.png" alt="Logo" class="logo"></div>
+            <div class="nav-list">
+                <ul>
+                    <li>Home</li>
+                    <li>Find Job</li>
+                    <li>Offer</li>
+                </ul>
+            </div>
+            <div class="nav-left-site-flex">
+                <p>GET <span class="parcent">20%</span> OFF</p>
+                <p class="balence-border"><img src="image/coin.png" alt="Balence" class="balence"><span class="coin-num">0</span></p>
+                <p><img src="image/user.png" alt="User" class="user"></p>
+            </div>
+        </nav>
+    </div>
+    <!-- ---------------------------------------------Navbar Design---------------------------------- -->
+
+    <!-- ---------------------------------------------Offers Design---------------------------------- -->
+    <p class="heading-title"><i class="fa-brands fa-slack"></i>Install App and Get reword</p>
+    <div class="offer-flex-box">
+        <div class="offer-container">
+            <div><img src="image/1pYnmK.jpg" alt="Offer"></div>
+            <p>Cash Giraffe</p>
+            <p>Install app</p>
+            <p>Offer Done : 87/100</p>
+            <p><a href="https://www.google.com/search?sca_esv=cb83b5b107ff8c41&sca_upv=1&rlz=1C1JJTC_enBD1015BD1015&sxsrf=ADLYWIKyQcalS96Ukd6ygjFSR0Vt9Dixeg:1718963117332&q=bosta&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2joZDvir2QxhZkTA8rK1etu4Y3067o-fAl7lygmK690uJyNhakMg---uzr_Yo0p3ZtGQanELZDOaVjFN7yUDe4fgm8aQJKQiASDBoi8CDjwBb6GIRacDnd6jmUt3-NxqSASwMc-y&sa=X&ved=2ahUKEwjW__XPtOyGAxUGSWwGHSkYBx8QtKgLegQICxAB&biw=1366&bih=641&dpr=1#vhid=mcWSC60qwO5nCM&vssid=mosaic" target="_blank">Start Offer</a></p>
+        </div>
+
+        <div class="offer-container">
+            <div><img src="image/8uJWU.jpg" alt="Offer"></div>
+            <p>Document Reader</p>
+            <p>Install app</p>
+            <p>Offer Done : 58/150</p>
+            <p><a href="#">Start Offer</a></p>
+        </div>
+
+        <div class="offer-container">
+            <div><img src="image/Et3.jpg" alt="Offer"></div>
+            <p>FanDuek</p>
+            <p>Install app</p>
+            <p>Offer Done : 76/200</p>
+            <p><a href="#">Start Offer</a></p>
+        </div>
+
+        <div class="offer-container">
+            <div><img src="image/EWBBcA.jpg" alt="Offer"></div>
+            <p>Cleo Cash</p>
+            <p>Install app</p>
+            <p>Offer Done : 26/100</p>
+            <p><a href="#">Start Offer</a></p>
+        </div>
+
+        <div class="offer-container">
+            <div><img src="image/ri5da.jpg" alt="Offer"></div>
+            <p>Loot Reward</p>
+            <p>Install app</p>
+            <p>Offer Done : 78/160</p>
+            <p><a href="#">Start Offer</a></p>
+        </div>
+
+        <div class="offer-container">
+            <div><img src="image/Vjoi6l.jpg" alt="Offer"></div>
+            <p>Ladbrokes</p>
+            <p>Install app</p>
+            <p>Offer Done : 97/120</p>
+            <p><a href="#">Start Offer</a></p>
+        </div>
+    </div>
+    <!-- ---------------------------------------------Offers Design---------------------------------- -->
+
+    <div class="footer">
+        <p>
+            <span>License</span>
+            <span>Terms of Service</span>
+            <span>Privacy Policy</span>
+            <span>Refunds</span>
+            <span>Cookie preferences</span>
+        </p>
+    </div>
+
+
+    <script>
+        window.addEventListener('load',() => {
+            let countElement = document.querySelector('.coin-num');
+            let balence = Number();
+
+            function reduse() {
+                let result = balence + 1;
+                balence = result;
+                countElement.innerHTML = balence + "€";
+                if(balence === 0){clearInterval(balanceInterval)};
+            }
+            let balanceInterval = setInterval(reduse, 60000);
+        });
+    </script>
+</body>
+</html>
